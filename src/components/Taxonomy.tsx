@@ -36,6 +36,7 @@ function Taxonomy() {
     let newOptions: any = [];
     let tempOptions = [...options];
     let tempLength = options.length;
+
     if (i <= selectedCategory.length - 1) {
       let tempSelected = [...selectedCategory];
       tempSelected=tempSelected.slice(0,i);
@@ -43,7 +44,10 @@ function Taxonomy() {
       setSelectedCategory(tempSelected);
       tempOptions = tempOptions.slice(0, i + 1);
       tempLength = i + 1;
-    } else setSelectedCategory([...selectedCategory, e]);
+    }
+    else 
+    setSelectedCategory([...selectedCategory, e]);
+
     childSeparatedData.forEach((it: any, i: any) => {
       if (it.length === tempLength + 1 && it[tempLength - 1] === e) {
         newOptions.push({
