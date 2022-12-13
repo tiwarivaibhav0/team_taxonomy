@@ -25,7 +25,7 @@ function Taxonomy() {
     let newOptions: any = [];
     tempchildSeparatedData.forEach((it: any) => {
       if (it.length === 1) {
-        newOptions.push({ label: it[0], value: it[0] });
+        newOptions.push({ label: it[0], value: it[0]});
       }
       setOptions([...options, newOptions]);
       setChildSeparatedData(tempchildSeparatedData);
@@ -82,6 +82,7 @@ function Taxonomy() {
               placeholder="Select"
               popoverContainer="body"
               thickness="thick"
+              
             />
           </Card>
         ))}

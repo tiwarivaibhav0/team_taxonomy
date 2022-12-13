@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
 import './App.css';
-import Taxonomy from './components/Taxonomy';
+import HighlightedDropdown from './components/HighlightedDropdown';
 
 const App:FC=() =>{
   return (
     <div className="App">
-    <Taxonomy/>
+    <HighlightedDropdown/>
     </div>
   );
 }
